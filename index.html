@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Creating an Online Job Application Form Using HTML</h1>
+    <form action="">
+        <fieldset>
+            <h3>Personal Information</h3>
+            <div><label for="fullName">Full Name: <input type="text" id="fullName" placeholder="Enter Your Full Name"></label></div>
+            <br>
+            <div><label for="nID">National Id: <input type="text" id="nID" placeholder="Enter Your ID"></label></div>
+            <br>
+            <div></div><label for="email">Email: <input type="text" id="email" placeholder="Enter Email Address"></label></div>
+            <br>
+            <div></div><label for="phone">Phone: <input type="text" id="phone" placeholder="Enter phone Number"></label></div>
+            <br>
+            <div><label for="dob">Date of Birth</label><input type="date" id="dob" name="dob" required>
+            </div>
+            <br>
+            <h4>Gender:</h4>
+            <input type="radio" name="gender" id="male" value="Male"> <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female"><label for="female">Female </label>
+
+            <h3>Job Information</h3>
+            <form action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <div>
+                <label for="position">Position Applied For:</label>
+                <select id="position" name="position" required>
+                    <option value="Software Developer" selected>Software Developer</option>
+                    <option value="Web Designer">Web Designer</option>
+                    <option value="Network Engineer">Network Engineer</option>
+                    <option value="Database Administrator">Database Administrator</option>
+                    <option value="IT Support Officer">IT Support Officer</option>
+                </select>
+            </div><br>
+            
+            <div>
+                <label for="experience">Experience Level:</label>
+                <select id="experience" name="experience" required>
+                    <option value="Fresher">Fresher</option>
+                    <option value="1-2 Years">1–2 Years</option>
+                    <option value="3-5 Years">3–5 Years</option>
+                    <option value="More Than 5 Years">More Than 5 Years</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <!-- 9. Technical Skills -->
+            <div>
+                <label>Select Technical Skills:</label><br>
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label><br>
+                
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label><br>
+                
+                <input type="checkbox" id="js" name="skills" value="JavaScript">
+                <label for="js">JavaScript</label><br>
+                
+                <input type="checkbox" id="python" name="skills" value="Python">
+                <label for="python">Python</label><br>
+                
+                <input type="checkbox" id="sql" name="skills" value="SQL">
+                <label for="sql">SQL</label>
+            </div>
+        </fieldset>
+
+            
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
