@@ -1,33 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC College</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="header">
-    <h1>ABC College</h1>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Courses</a>
-    <a href="#">Admission</a>
-    <a href="#">Contact</a>
-</div>
-<div class="hero">
-    <h1>Wellcome to ABC College</h1>
-    <p>ABC College provides quality education and helps students achieve academic excellence</p>
-    <button>Apply Now</button>
-    <fieldset>
-    <legend>Our Faculty</legend>
-    <div id="box1">FST</div>
-    <div id="box2">FE</div>
-    <div id="box3">FBA</div>
-    </fieldset>
-</div>
-<br>
-<br>
+
+    <div class="container">
+
+        <h2>Student Registration Form</h2>
+
+        <form id="form">
+
+            <!-- First Name -->
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Enter your first name">
+            <small id="fnameError" class="error"></small>
+
+            <!-- Last Name -->
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Enter your last name">
+            <small id="lnameError" class="error"></small>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email address">
+            <small id="emailError" class="error"></small>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <small id="passwordError" class="error"></small>
+
+            <!-- Gender -->
+            <label>Gender</label>
+
+            <div class="radio-group">
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+            </div>
+
+            <small id="genderError" class="error"></small>
+
+            <!-- Interests -->
+            <label>Interests</label>
+
+            <div class="checkbox-group">
+
+                <input type="checkbox" id="ai" name="interest" value="AI">
+                <label for="ai">AI</label>
+
+                <input type="checkbox" id="ml" name="interest" value="Machine Learning">
+                <label for="ml">Machine Learning</label>
+
+                <input type="checkbox" id="ds" name="interest" value="Data Science">
+                <label for="ds">Data Science</label>
+
+            </div>
+
+            <small id="interestError" class="error"></small>
+
+            <!-- Department -->
+            <label for="department">Department</label>
+
+            <select id="department">
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="BBA">BBA</option>
+                <option value="English">English</option>
+            </select>
+
+            <small id="departmentError" class="error"></small>
+
+            <!-- Address -->
+            <label for="address">Address</label>
+
+            <textarea id="address" rows="5" placeholder="Enter your address"></textarea>
+
+            <small id="addressError" class="error"></small>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+    <!-- <script src="script.js"></script> -->
 
 </body>
+
 </html>

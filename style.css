@@ -1,54 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 body{
-    margin: 0;
-    font-family: Arial;
+    background:#f2f4f7;
 
-}
-.header{
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-.header a{
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-}
-.hero{
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 120px 20px;
-}
-.hero h1{
-    font-size: 40px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
 
+    min-height:100vh;
+
+    padding:40px 0;
 }
-.hero p{
-    font-size: 20px;
+
+.container{
+
+    width:800px;          
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 15px rgba(0,0,0,.2);
 }
-fieldset{
-    width: 1370px;
-    margin: 20px 30px;
-    height: 300px;
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
 }
-#box1, #box2, #box3{
-    width: 300px;
-    height: 200px;
-    display: inline-block;
-    margin: 20px;
-    background-color: aqua;
-    font-size: 40px;
-    color: black;
-    text-align: center;
-    bottom: 100px;
-    }
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    font-weight:bold;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea{
+
+    width:100%;
+    padding:10px;
+    border:1px solid #999;
+    border-radius:5px;
+    font-size:15px;
+}
+
+.radio-group,
+.checkbox-group{
+
+    display:flex;
+    gap:20px;
+    align-items:center;
+    margin-top:5px;
+}
+
+.radio-group label,
+.checkbox-group label{
+    font-weight:normal;
+    margin:0;
+}
+
 button{
-    background-color: yellow;
-    color: black;
-    border: none;
-    padding: 12px 25px;
-    font-size: 20px;
-    cursor: pointer;
 
+    margin-top:30px;
+
+    width:100%;
+
+    padding:12px;
+
+    background:#007bff;
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+}
+
+button:hover{
+
+    background:#0056b3;
 }
